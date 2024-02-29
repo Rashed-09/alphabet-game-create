@@ -20,8 +20,9 @@
                 <button class="btn text-black">Play Now</button>
             </div>
         </section>
+
         <!-- Play game section  -->
-        <section class="game space-y-20 h-full">
+        <section class="game space-y-20 h-full hidden">
             <!-- display site  -->
            <div class="flex justify-center pt-24">
             <div class="artboard artboard-horizontal phone-6 bg-[#ffffffB3] border-[#010313cc] border-[20px] rounded-2xl">
@@ -74,8 +75,15 @@
             </div>
 
         </section>
+
         <!-- show score section  -->
-        <section class="score"></section>
+        <section class="score min-h-screen flex flex-col items-center justify-center hidden">
+            <div class="bg-purple-600 p-14 flex flex-col items-center gap-6 w-96 rounded-md">
+                <h1 class="text-6xl text-white font-bold">Score: <span>14</span></h1>
+                <button class="btn text-black text-2xl">Play Again</button>
+                <p class="text-white text-xl">practice will make you pro</p>
+            </div>
+        </section>
     </main>
 </body>
 </html>
