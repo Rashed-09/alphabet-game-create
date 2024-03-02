@@ -8,17 +8,18 @@ function showClass(showElementId){
     showId.classList.remove('hidden')
 }
 
+function setRandomAlphabet(){
+    const alphabetString = 'abcdefghijklmnopqrstuvwxyz';
+    const toArry = alphabetString.split('');
+    
+    const value = Math.floor(Math.random()*26);
+    const randomAlphabet = toArry[value];
 
-function randomNumber(){
-    const alphabets =  'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    const alphabet = alphabets.split('');
-    
-    const random = Math.random()*25;
-    const indexNumber = Math.round(random);
-
-    const randomAlphabet = alphabets[indexNumber];
-    console.log('Random alphabet is ',randomAlphabet);
-    
-    
+    return randomAlphabet;
 }
+
+
+    
+
+
 
