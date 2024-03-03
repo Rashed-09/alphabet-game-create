@@ -55,6 +55,9 @@ function setElementById(elementId, updateValue){
 function keyboardButtonEvent(event){
     const keyboardKeyword = event.key;
 
+    if(keyboardKeyword === 'Escape'){
+        gameOver()
+    }
 
     const currentAllphabet = document.getElementById('current-alphabet');
     const displayLatter = currentAllphabet.innerText.toLowerCase();
